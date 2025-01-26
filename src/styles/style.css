@@ -22,14 +22,25 @@ body {
 /* Title Section */
 section > .title-section {
   margin-block-end: 2rem;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
+/* Styling untuk h2 di .title-section */
 .title-section h2 {
   font-size: 1.8em;
   margin: 0;
   color: #333;
+  margin-bottom: 15px;
   text-align: center;
+}
+
+/* Styling untuk h2 di .note-list-container */
+.note-list-container h2 {
+  font-size: 1.8em;
+  margin: 0;
+  color: #333;
+  text-align: left;
+  margin-top: 30px;
 }
 
 /* Form Styling */
@@ -51,7 +62,8 @@ label {
   display: block;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -61,9 +73,10 @@ input, textarea {
   box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
-  border-color: #007BFF;
+  border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
@@ -73,7 +86,7 @@ textarea {
 }
 
 button {
-  background-color: #007BFF;
+  background-color: #007bff;
   color: #fff;
   font-size: 16px;
   padding: 10px 20px;
@@ -98,17 +111,23 @@ button:focus {
   font-size: 0.9em;
   margin-top: 5px;
 }
-input:invalid, textarea:invalid {
+input:invalid,
+textarea:invalid {
   border: 2px solid red;
 }
-input:valid, textarea:valid {
+input:valid,
+textarea:valid {
   border: 2px solid green;
 }
-
 
 /* Responsif untuk layar kecil */
 @media (max-width: 600px) {
   .title-section h2 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .note-list-container h2 {
     font-size: 1.4em;
     text-align: center;
   }
@@ -125,6 +144,10 @@ input:valid, textarea:valid {
     font-size: 1.6em;
   }
 
+  .note-list-container h2 {
+    font-size: 1.6em;
+  }
+
   #noteForm {
     width: 80%;
   }
@@ -133,7 +156,11 @@ input:valid, textarea:valid {
 /* Responsif untuk layar besar */
 @media (min-width: 901px) {
   .title-section h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
+  }
+
+  .note-list-container h2 {
+    font-size: 1.6em;
   }
 
   #noteForm {
